@@ -1,0 +1,22 @@
+<html>
+no ieda what to say
+<pre>
+    Name: ${name}
+    Colors: <#list colors as color>
+                This is color ${color};
+            </#list>
+    Map: <#list maps as key,value>
+                Number: ${key}, Value: ${value};
+         </#list>
+
+    User: ${user.getName()};
+          ${user.description};
+          ${user.getDescription()}; <#-- 底层查找-->
+
+    <#-- 定义变量 -->
+    <#assign title = "nowcoder">
+    Title: ${title};
+
+    <#include "/header.html">
+</pre>
+</html>
